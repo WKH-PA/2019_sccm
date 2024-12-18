@@ -50,24 +50,25 @@ $r = LAY_banner_new("`id_parent` = 25", 1);
         </div>
     </div>
 </div>
-<div class="box_ykienkh_home">
-    <div class="pagewrap">
-        <div class="titBox left">
-            <div class="tit_2"><?= $glo_lang['video_noi_bat'] ?></div>
-            <div class="sub_2"><?= $glo_lang['video_noi_bat_desc'] ?></div>
-        </div>
-        <div class="video-container">
-            <iframe
-                    src="<?=youtubeDataVideo($thongtin['youtube_link'])?>"
-<!--                    src="https://www.youtube.com/embed/W_MfNQ9cv9M?autoplay=1&loop=1&mute=1&playlist=W_MfNQ9cv9M"-->
-                    title="YouTube video"
-                    allow="autoplay; fullscreen"
-                    allowfullscreen>
-            </iframe>
+<?php if (!empty($thongtin['youtube_link'])) { ?>
+    <div class="box_ykienkh_home">
+        <div class="pagewrap">
+            <div class="titBox left">
+                <div class="tit_2"><?= $glo_lang['video_noi_bat'] ?></div>
+                <div class="sub_2"><?= $glo_lang['video_noi_bat_desc'] ?></div>
+            </div>
+            <div class="video-container">
+                <iframe
+                        src="<?= youtubeDataVideo($thongtin['youtube_link']) ?>"
+                        title="YouTube video"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
-</div>
-<?php
+    <?php
+}
 $step = 6;
 $sp_step = LAY_step($step);
 $sp_baiviet = LAY_baiviet($step, 0, "`opt` = 1");
