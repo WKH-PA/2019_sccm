@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="images/fancybox/jquery.fancybox.css"/>
 <link rel="stylesheet" type="text/css" href="css/galleria.folio.css"/>
 <link href="css/style.css?v=<?=time() ?>" rel="stylesheet" type="text/css" />
+<link href="css/custom.css?v=<?=time() ?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type='text/javascript' src='js/jquery.marquee.min.js'></script>
 <script type="text/javascript" src="js/jquery.carouFredSel.js"></script>
