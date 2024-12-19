@@ -27,7 +27,7 @@
 <div id="rightNav">
     <?php if (!empty($thongtin['zalo_link'])) { ?>
         <a rel="noreferrer" class="zalo_pc" href="<?= $thongtin['zalo_link'] ?>" title="Chat Zalo"
-           target="_blank"><img src="images/icon_zalo.svg" alt="Chat Zalo" title="Chat Zalo" width="50"
+           target="_blank"><img src="images/zalo.png" alt="Chat Zalo" title="Chat Zalo" width="50"
                                 height="50"></a>
     <?php } ?>
 
