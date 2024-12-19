@@ -2,11 +2,11 @@
 $configSocial = [
 
     'youtube_link' => [
-        'name' => 'Youtube Link',
+        'name' => 'Liên kết video home',
         'default_link' => 'https://www.youtube.com/'
     ],
     'zalo_link' => [
-        'name' => 'Zalo Link',
+        'name' => 'Zalo chat',
         'default_link' => 'https://zalo.me/0983404271'
     ],
 
